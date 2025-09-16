@@ -129,12 +129,20 @@ const recentProjects = [
       </div>`;
   }
 
+  let shown = 1;
 
- listEl.innerHTML = recentProjects.slice(0, 3).map(projectCardHTML).join("");
+  listEl.innerHTML = recentProjects.slice(0, shown).map(projectCardHTML).join("");
 
   loadMoreBtn.addEventListener("click", () => {
-    const rest = recentProjects.slice(3).map(projectCardHTML).join("");
-    listEl.innerHTML += rest;
-    loadMoreBtn.style.display = "none";
+    if (shown < recentProjects.length) {
+      const next = recentProjects[shown];
+      listEl.innerHTML += projectCardHTML(next);
+      shown++;
+
+      // hide button when we've reached the end
+      if (shown >= recentProjects.length) {
+        loadMoreBtn.style.display = "none";
+      }
+    }
   });
 })();
