@@ -19,3 +19,7 @@ https://github.com/varadbhogayata/varadbhogayata.github.io
 
 ## Activity 4
 ![activity 4](assets/img/activity-4.png)
+
+## Activity 5
+![activity 5 before](assets/img/activity-5-1.png)
+![activity 5 after](assets/img/activity-5-2.png)
