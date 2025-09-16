@@ -426,84 +426,16 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/audio-style-transfer.jpeg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Audio Style Transfer<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Researched a new method of style transfer using CNNs
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PyTorch, Librosa, NoiseReduce</li>
-                  <li>Developed a neural style transfer model to transform non-standard English accents into a standardized accent, validated using Google’s ASR model to calculate Word Error Rate (WER)/</li>
-                  <li>Implemented a robust data processing pipeline using Librosa and NoiseReduce, supporting the training of the NST model built with convolutional layers.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://benjaminmah.com/files/accent-style-transfer.pdf" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/benjaminmah/accent-style-transfer"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col s12">
+            <h4 class="brown-text light">Recent Projects</h4>
           </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/kidney-image-segmentation.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Kidney Image Segmentation<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Used a feature pyramid network to segment vasculature in kidney ct scans
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PyTorch, NumPy</li>
-                  <li>Segmented kidney vasculature using a feature pyramid network.</li>
-                  <li>Achieved state-of-the-art performance on kidney CT scan segmentation benchmarks.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://benjaminmah.com/files/kidney-image-segmentation.pdf" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/benjaminmah/kidney-image-segmentation"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ************* -->
         </div>
-      </div>
+        <div id="recent-projects" class="row" aria-live="polite" aria-busy="false"></div>
+        <div class="row">
+          <div class="col s12 center">
+            <a id="load-more-projects" class="btn waves-effect">Load More</a>
+          </div>
+        </div>
     </section>
 
     <!-- Fifth Section: Skills -->
@@ -719,6 +651,8 @@
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <!-- recent projects -->
+  <script src="assets/js/recent-projects.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
       strings: ["Researcher", "Machine Learning Engineer", "Data Scientist"],
