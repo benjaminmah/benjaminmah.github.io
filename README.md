@@ -13,3 +13,6 @@ https://github.com/varadbhogayata/varadbhogayata.github.io
 ![activity 2 skills](assets/activity-2-skills.png)
 ![activity 2 education](assets/activity-2-education.png)
 ![activity 2 contact](assets/activity-2-contact.png)
+
+## Activity 3
+![activity 3](assets/activity-3.png)
